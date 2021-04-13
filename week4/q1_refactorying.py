@@ -27,7 +27,7 @@ class PriorityQueue:
     def get(self):
         if self.is_empty():
             return None
-        # 아래에서 사용할 변수 선언
+        # 가독성을 위한 변수 선언
         heap = self.min_heap
         current_num = 1
         # 리턴값 저장, 마지막에 들어온 값을 힙의 root에 복사 후, 삭제
@@ -62,6 +62,7 @@ class PriorityQueue:
 
             if self.flag:
                 break
+            
         return return_data
     
  
